@@ -1,75 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="57.507">
-    <testcase classname="data_tables" name="TC_Create_And verify the test data creation" time="15.136">
-        <system-out>
-            <![CDATA[Given user is on the "https://editor.datatables.net/" page..................passed
-And user click on the new button............................................passed
-And user enter the first name "john"........................................passed
-And user enter the last name"smith".........................................passed
-And user enter the position "tester"........................................passed
-And user enter the office "NYC".............................................passed
-And user enter the extension "2134".........................................passed
-And user enter the start date "2023-01-23"..................................passed
-And user enter the salary "80000"...........................................passed
-And click on create button..................................................passed
-And search for the first name "john"........................................passed
-Then verify the name field contains the first name "john"...................passed
-Then close the application..................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.572">
+    <testcase classname="hooks_test" name="TC_01" time="6.479">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given user is on "https://www.bluerentalcars.com/login" page................passed
+And user enters customer_email and customer_password........................passed
+Then verify the next page url contains login keyword........................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.BlueRentalLoginStepDefinitions.verify_the_next_page_url_contains_login_keyword(BlueRentalLoginStepDefinitions.java:55)
+	at ✽.verify the next page url contains login keyword(file:///C:/Users/tasta/IdeaProjects/My-Cucumber-Project/./src/test/resources/features/day26_failed_test_cases.feature:9)
 ]]>
-        </system-out>
-    </testcase>
-    <testcase classname="data_tables" name="TC_Create_And verify the test data creation 2" time="13.618">
-        <system-out>
-            <![CDATA[Given user is on the "https://editor.datatables.net/" page..................passed
-And user click on the new button............................................passed
-And user enter the first name "sam".........................................passed
-And user enter the last name"walten"........................................passed
-And user enter the position "businessman"...................................passed
-And user enter the office "LA"..............................................passed
-And user enter the extension "5262".........................................passed
-And user enter the start date "2023-01-24"..................................passed
-And user enter the salary "20000000"........................................passed
-And click on create button..................................................passed
-And search for the first name "sam".........................................passed
-Then verify the name field contains the first name "sam"....................passed
-Then close the application..................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="data_tables" name="TC_Create_And verify the test data creation 3" time="13.689">
-        <system-out>
-            <![CDATA[Given user is on the "https://editor.datatables.net/" page..................passed
-And user click on the new button............................................passed
-And user enter the first name "nancy".......................................passed
-And user enter the last name"brown".........................................passed
-And user enter the position "developer".....................................passed
-And user enter the office "Dallas"..........................................passed
-And user enter the extension "2346".........................................passed
-And user enter the start date "2023-01-25"..................................passed
-And user enter the salary "85000"...........................................passed
-And click on create button..................................................passed
-And search for the first name "nancy".......................................passed
-Then verify the name field contains the first name "nancy"..................passed
-Then close the application..................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="data_tables" name="TC_Create_And verify the test data creation 4" time="14.946">
-        <system-out>
-            <![CDATA[Given user is on the "https://editor.datatables.net/" page..................passed
-And user click on the new button............................................passed
-And user enter the first name "george"......................................passed
-And user enter the last name"bush"..........................................passed
-And user enter the position "politician"....................................passed
-And user enter the office "Dallas"..........................................passed
-And user enter the extension "9931".........................................passed
-And user enter the start date "2023-01-26"..................................passed
-And user enter the salary "98500"...........................................passed
-And click on create button..................................................passed
-And search for the first name "george"......................................passed
-Then verify the name field contains the first name "george".................passed
-Then close the application..................................................passed
-]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

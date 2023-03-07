@@ -10,8 +10,8 @@ import utilities.ReusableMethods;
 public class DataTablesStepDefinitions {
 DataTablesPage dataTablesPage =new DataTablesPage();
 
-    @Given("user is on the {string} page")
-    public void user_is_on_the_page(String string) {
+    @Given("user is on {string} page")
+    public void userIsOnPage(String string) {
         Driver.getDriver().get(string);
         ReusableMethods.waitFor(2);
     }
@@ -74,4 +74,5 @@ DataTablesPage dataTablesPage =new DataTablesPage();
     }
 
 
-}
+
+    }
